@@ -1,0 +1,16 @@
+add one 1 
+add one 2
+
+
+ chef-server-ctl user-create user_name adrian email password --filename FILE_NAME
+ 
+ chef-server-ctl user-create adrian Adrian Oprea oprea_3@hotmail.com adrian --filename /opt/opscode/admins/adrian.pem
+ 
+ 
+ ./stock_gen \
+        --datadirectory /tmp/stock_schema \
+        --time_file Time.txt \
+        --stock_dimension 273 \
+        --trader_dimension 200 \
+        --split_dimension 500 \
+        --stocktransaction_fact 100000
